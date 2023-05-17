@@ -78,7 +78,7 @@
 <div class="container-fluid pt-4 px-2" *ngIf="!hideDiv">
     <a href="MainPage">
         <button
-            style="border-radius: 20px;width: 14%;max-width: 100%;height:auto;margin-top:100px;background-color: #63AEB3;text-align:center;margin-bottom:10px;">
+            style="border-radius: 20px;max-width: 100%;height:auto;margin-top:100px;background-color: #63AEB3;text-align:center;margin-bottom:10px;">
             Find Other jobs</button>
     </a>
     <div id="welcome1">
@@ -91,18 +91,21 @@
                 <div style="margin-left: 20px;" class="col-md-7">{{job.job_type}} - {{job.job_pay_type}} - Posted
                     {{job.created_time}} ago</div>
             </div>
-            <div class="row">
+            <div class="row" style="width: 100%;">
                 <div style="margin-left: 20px;margin-bottom: 20px;color: #050505;" class="col-md-7">
                     {{job.jop_discription}}</div>
 
                     
-                <div style="margin-left: 200px;margin-bottom: 20px;color: #050505;" class="col-md-2">
-                    
-                    <button style="color: #050505;max-width: 100%;height: auto;" type="button"
-                        class="btn btn-secondary" data-bs-dismiss="modal" (click)="apply_job(job)">Apply Job</button>
-                </div>
+                
 
             </div>
+
+            <!-- <div style="margin-left: 200px;margin-bottom: 20px;color: #050505;" class="col-md-2"> -->
+                    
+                <button style="color: #050505;max-width: 100%;height: auto;" type="button"
+                    class="btn btn-secondary" data-bs-dismiss="modal" (click)="apply_job(job)">Apply Job</button>
+            <!-- </div> -->
+
         </div>
 
 
