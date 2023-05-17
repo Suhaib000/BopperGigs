@@ -93,3 +93,20 @@ nav {
     max-width: 100%;
     height: auto;
   }
+
+
+  @media (max-width: 700px) {
+
+    img{
+      max-width: 150%!important;
+      height: auto!important;;
+    }
+    p{
+      font-size: 15px!important;
+      width: 200%!important;
+    }
+
+    h2{
+      font-size: 15px!important;
+    }
+  }

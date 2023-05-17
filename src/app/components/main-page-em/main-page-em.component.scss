@@ -72,5 +72,26 @@ nav {
     background-color: #63AEB3;
   }
 
+  img{
+    margin: 1px; 
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+
+      #welcome{
+        max-width: 110%!important;
+        width: 110%!important;
+      }
+      col-6{
+            margin: 100%!important;
+      }
+      #jjj{
+        max-width: 110%!important;
+        width: 110%!important;
+      }
+  }
+
 
   

@@ -4,6 +4,10 @@
   <div class="row" style="margin: 50px;">
     <div class="col-11">
       <h1 style="margin-top: 50px;  font-family: Georgia, serif;"><strong>Your Dashboard...</strong></h1>
+      <button style="width: 20%;border-radius: 50px;height: auto;font-size: 20px;" type="button" class="btn btn-primary"
+        data-bs-toggle="modal" data-bs-target="#exampleModal" id="jjj">
+       <p style="height: auto;max-width: 100%">Post Job</p> 
+      </button>
     </div>
     <div id="welcome">
       <div *ngIf="hideDiv">
@@ -16,13 +20,13 @@
 
             <h4 style="margin-left: 20px;">{{ job.jop_name }}</h4>
             <div class="row">
-              <div style="margin-left: 20px;" class="col-md-6">{{job.job_type}}</div>
-              <div class="col-md-2" style="text-align: center;" >number of applicants</div>
+              <div style="margin-left: 20px;" class="col-5">{{job.job_type}}</div>
+              <div class="col-5" style="text-align: center;" >number of applicants</div>
             </div>
             <div class="row">
-              <div style="margin-left: 20px;margin-bottom: 20px;" class="col-md-6">{{job.job_pay_type}}</div>
-              <div class="col-md-2" style="margin-left: 60px;" >{{ job.proposal_num }}</div>
-              <div  class="col-md-3">Created {{job.created_time}} ago</div>
+              <div style="margin-left: 20px;margin-bottom: 20px;" class="col-6">{{job.job_pay_type}}</div>
+              <div class="col-2" style="margin-left: 60px;" >{{ job.proposal_num }}</div>
+              <!-- <div  class="col-3">Created {{job.created_time}} ago</div> -->
             </div>
           </a>
 
@@ -43,12 +47,12 @@
         <div *ngFor="let job of applaied_job">
           <hr>
             <div class="row"  style="margin: 5px;">
-              <div style="margin-left: 20px;" class="col-md-7">{{job.student_username}}</div>
-              <div class="col-md-3">Applied</div>
+              <div style="margin-left: 20px;" class="col-7">{{job.student_username}}</div>
+              <div class="col-3">Applied</div>
             </div>
             <div class="row"  style="margin: 5px;">
-              <div style="margin-left: 20px;margin-bottom: 20px;" class="col-md-7">{{ job.proposal }}</div>
-              <div class="col-md-3">{{job.created_time}} ago</div>
+              <div style="margin-left: 20px;margin-bottom: 20px;" class="col-7">{{ job.proposal }}</div>
+              <div class="col-3">{{job.created_time}} ago</div>
             </div>
         </div>
       </div>
@@ -56,12 +60,12 @@
 
     </div>
 
-    <div class="col-1">
-      <button style="width: 170%;max-width: 170%;border-radius: 50px;margin-left: 50px;height: auto;font-size: 20px;" type="button" class="btn btn-primary"
+    <!-- <div class="col-1">
+      <button style="width: 150%!important;border-radius: 50px;margin-left: 50px;height: 20%;font-size: 20px;" type="button" class="btn btn-primary"
         data-bs-toggle="modal" data-bs-target="#exampleModal">
        <p style="height: auto;max-width: 100%">Post Job</p> 
       </button>
-    </div>
+    </div> -->
   </div>
 
 

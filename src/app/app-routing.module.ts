@@ -7,6 +7,7 @@ import{MainPageComponent} from "./components/main-page/main-page.component"
 import{MainPageEmComponent} from "./components/main-page-em/main-page-em.component"
 import { AuthGuard } from './auth.guard';
 
+
 const routes:Routes = [
   {path: '', component: HomeComponent},
   {path: 'login', component: LoginComponent },

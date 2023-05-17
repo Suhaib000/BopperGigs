@@ -40,6 +40,9 @@ nav {
     border-radius: 3%;
   }
   
-  p{
-    
+  @media (max-width: 768px) {
+    .my-container {
+      grid-template-columns: 1fr;
+    }
+  
   }
