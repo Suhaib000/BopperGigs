@@ -6,7 +6,7 @@
       <h1 style="margin-top: 50px;  font-family: Georgia, serif;"><strong>Your Dashboard...</strong></h1>
       <button style="width: 20%;border-radius: 50px;height: auto;font-size: 20px;" type="button" class="btn btn-primary"
         data-bs-toggle="modal" data-bs-target="#exampleModal" id="jjj">
-       <p style="height: auto;max-width: 100%">Post Job</p> 
+       <p style="height: auto;max-width: 100%">Post Project</p> 
       </button>
     </div>
     <div id="welcome">
@@ -38,11 +38,11 @@
          <a class="navbar-brand" href="MainPageEm">
           <button style="border-radius: 50px;margin: 10px;" type="button" class="btn btn-primary"
           data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Back to your main job
+          Back to your main Project
         </button>
          </a>
          <hr>
-        <h4>People apply to this job</h4>
+        <h4>People apply to this Project</h4>
 
         <div *ngFor="let job of applaied_job">
           <hr>
@@ -77,22 +77,22 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Post Job</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Post Project</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <!-- ================================form================================================ -->
         <form class="px-4 pt-5 my-auto" [formGroup]="myForm" (ngSubmit)="craete_job()">
-          <p class="text-muted">Please enter your Job details.</p>
+          <p class="text-muted">Please enter your Project details.</p>
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInput" placeholder="jop_name"
               formControlName="jop_name">
-            <label for="floatingInput">Jop Name</label>
+            <label for="floatingInput">Project Name</label>
           </div>
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInput" placeholder="jop_discription"
               formControlName="jop_discription">
-            <label for="floatingInput">Jop Discription</label>
+            <label for="floatingInput">Project Discription</label>
           </div>
 
           <div class="form-floating mb-3">
@@ -108,7 +108,7 @@
           <div class="form-floating mb-3">
             <select class="form-select" id="floatingjob_type" name="job_type" placeholder="job_type"
               formControlName="job_type">
-              <option value="" selected disabled>Select Job Type</option>
+              <option value="" selected disabled>Select Project Type</option>
               <option value="Graphic Design">Graphic Design</option>
               <option value="Marketing">Marketing</option>
               <option value="Gaming Test">Gaming Test</option>
@@ -123,7 +123,7 @@
           <div class="form-floating mb-3">
             <select class="form-select" id="floatingjob_pay_type" name="job_pay_type" placeholder="job_pay_type"
               formControlName="job_pay_type">
-              <option value="" selected disabled>Select Job Pay Type</option>
+              <option value="" selected disabled>Select Project Pay Type</option>
               <option value="Hourly">Hourly</option>
               <option value="Fixed price">Fixed price</option>
             </select>

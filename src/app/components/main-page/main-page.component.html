@@ -3,7 +3,7 @@
         <h1 style="font-family: Georgia, serif;">Good Afternoon {{getFullName()}}, <br> Welcome Back...</h1>
     </div>
     <hr style="width: 80%;margin: 5px;">
-    <p style="font-family: Century, serif;font-size: 40px!important;margin: 20px;">Jobs for Students...</p>
+    <p style="font-family: Century, serif;font-size: 40px!important;margin: 20px;">Projects for Students...</p>
     <div class="row">
 
 
@@ -12,7 +12,7 @@
                 <img   src="assets/img/8.webp" alt="Logo" style="max-width: 100%;height: auto;">
             </a>
             <h2><strong>Graphic Design</strong></h2>
-            <p style="font-family: Georgia, serif;">Get access to the latest Graphic Design job postings now!</p>
+            <p style="font-family: Georgia, serif;">Get access to the latest Graphic Design projects </p>
 
         </div>
 
@@ -22,22 +22,22 @@
                 <img   src="assets/img/24.jpeg" alt="Logo" style="max-width: 100%;height: auto;">
             </a>
             <h2 style="max-width: 100%;height: auto;"><strong style="max-width: 100%;height: auto;">Marketing</strong></h2>
-            <p style="font-family: Georgia, serif;">Get access to the latest Marketing job postings now!</p>
+            <p style="font-family: Georgia, serif;">Get access to the latest Marketing projects </p>
         </div>
 
         <div class="col-3" style="margin: 50px;">
             <a href="MainPage" (click)="sort_job('Gaming Test');hideDiv = !hideDiv">
                 <img   src="assets/img/5.webp" alt="Logo" style="max-width: 100%;height: auto;">
             </a>
-            <h2><strong>Gaming Test</strong></h2>
-            <p style="font-family: Georgia, serif;">Get access to the latest Gaming Test job postings now!</p>
+            <h2><strong>Game Tester</strong></h2>
+            <p style="font-family: Georgia, serif;">Get access to the latest Gaming Test projects </p>
         </div>
         <div class="col-3" style="margin: 50px;">
             <a href="MainPage" (click)="sort_job('Social Media Management');hideDiv = !hideDiv">
                 <img   src="assets/img/social.avif" alt="Logo" style="max-width: 100%;height: auto;">
             </a>
             <h2><strong>Social Media Management</strong></h2>
-            <p style="font-family: Georgia, serif;">Get access to the latest Social Media Management job postings now!
+            <p style="font-family: Georgia, serif;">Get access to the latest Social Media Management projects 
             </p>
         </div>
 
@@ -46,7 +46,7 @@
                 <img   src="assets/img/video.jpg" alt="Logo" style="max-width: 100%;height: auto;">
             </a>
             <h2><strong>Video Creation</strong></h2>
-            <p style="font-family: Georgia, serif;">Get access to the latest Video Creation job postings now!</p>
+            <p style="font-family: Georgia, serif;">Get access to the latest Video Creation projects </p>
         </div>
 
         <div class="col-3" style="margin: 50px;">
@@ -54,7 +54,7 @@
                 <img   src="assets/img/Tutoring.jpg" alt="Logo" style="max-width: 100%;height: auto;">
             </a>
             <h2><strong>Tutoring</strong></h2>
-            <p style="font-family: Georgia, serif;">Get access to the latest Tutoring job postings now!</p>
+            <p style="font-family: Georgia, serif;">Get access to the latest Tutoring projects </p>
         </div>
 
         <div class="col-3" style="margin: 50px;">
@@ -62,14 +62,14 @@
                 <img   src="assets/img/Researching.jpg" alt="Logo" style="margin-top: 50px;max-width: 100%;height: auto;">
             </a>
             <h2><strong>Researching Topics</strong></h2>
-            <p style="font-family: Georgia, serif;">Get access to the latest Researching Topics job postings now!</p>
+            <p style="font-family: Georgia, serif;">Get access to the latest Researching Topics projects </p>
         </div>
         <div class="col-3" style="margin: 50px;">
             <a href="MainPage" (click)="sort_job('Product Testers');hideDiv = !hideDiv">
                 <img  src="assets/img/3.webp" alt="Logo" style="margin-top: 50px;max-width: 100%;height: auto;">
             </a>
             <h2><strong>Product Testers</strong></h2>
-            <p style="font-family: Georgia, serif;">Get access to the latest Product Testers job postings now!</p>
+            <p style="font-family: Georgia, serif;">Get access to the latest Product Testers projects </p>
         </div>
     </div>
 
@@ -79,7 +79,7 @@
     <a href="MainPage">
         <button
             style="border-radius: 20px;max-width: 100%;height:auto;margin-top:100px;background-color: #63AEB3;text-align:center;margin-bottom:10px;">
-            Find Other jobs</button>
+            Find Other Projects</button>
     </a>
     <div id="welcome1">
 
@@ -93,7 +93,8 @@
             </div>
             <div class="row" style="width: 100%;">
                 <div style="margin-left: 20px;margin-bottom: 20px;color: #050505;" class="col-md-7">
-                    {{job.jop_discription}}</div>
+                    <!-- {{job.jop_discription}} -->
+                </div>
 
                     
                 
@@ -103,7 +104,7 @@
             <!-- <div style="margin-left: 200px;margin-bottom: 20px;color: #050505;" class="col-md-2"> -->
                     
                 <button style="color: #050505;max-width: 100%;height: auto;" type="button"
-                    class="btn btn-secondary" data-bs-dismiss="modal" (click)="apply_job(job)">Apply Job</button>
+                    class="btn btn-secondary" data-bs-dismiss="modal" (click)="apply_job(job)">Apply Project</button>
             <!-- </div> -->
 
         </div>
